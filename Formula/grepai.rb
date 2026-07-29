@@ -5,21 +5,21 @@
 class Grepai < Formula
   desc "Privacy-first semantic code search CLI"
   homepage "https://github.com/Slicit/grepai"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Slicit/grepai/releases/download/v0.1.2/grepai_0.1.2_darwin_amd64.tar.gz"
-      sha256 "7ff3969658b0d7a99089936da7a890c1c1bf3df6fe1e6c6b17b4e471b8934a0f"
+      url "https://github.com/Slicit/grepai/releases/download/v0.1.3/grepai_0.1.3_darwin_amd64.tar.gz"
+      sha256 "6489bdee4b9627e77e66ba68c6e80c9b9cf99af1d7f4b08721c54faf42069f32"
 
       define_method(:install) do
         bin.install "grepai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Slicit/grepai/releases/download/v0.1.2/grepai_0.1.2_darwin_arm64.tar.gz"
-      sha256 "ab3a7d88a60b8c501f20f118c70b957f4d0b49dc031aa62537e487cd6b08de36"
+      url "https://github.com/Slicit/grepai/releases/download/v0.1.3/grepai_0.1.3_darwin_arm64.tar.gz"
+      sha256 "f33f93387005eec76a65f8ede8994805efd2531a37eb5f1a9526f1886aeec5db"
 
       define_method(:install) do
         bin.install "grepai"
@@ -29,15 +29,15 @@ class Grepai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Slicit/grepai/releases/download/v0.1.2/grepai_0.1.2_linux_amd64.tar.gz"
-      sha256 "0c42c37358c4175d2bf0642eb37d5d6a365709a4bd1ff434b7a2ee572da21b2f"
+      url "https://github.com/Slicit/grepai/releases/download/v0.1.3/grepai_0.1.3_linux_amd64.tar.gz"
+      sha256 "eb7fa3d25a5dcc89c13f373f3be74041096ef3fc767c1af7ccf37d12c8050a66"
       define_method(:install) do
         bin.install "grepai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Slicit/grepai/releases/download/v0.1.2/grepai_0.1.2_linux_arm64.tar.gz"
-      sha256 "19fb53f94c8f6867b2056518b099661aa5701943693d88d94291009234653e40"
+      url "https://github.com/Slicit/grepai/releases/download/v0.1.3/grepai_0.1.3_linux_arm64.tar.gz"
+      sha256 "bd7a93f2d0ac0c23132f58acfba3e6845842eeccc599482ed17f4d0d2f11c7b4"
       define_method(:install) do
         bin.install "grepai"
       end
